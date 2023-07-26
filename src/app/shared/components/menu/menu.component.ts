@@ -7,7 +7,7 @@ import { MenuItem } from 'primeng/api';
   styles: [],
 })
 export class MenuComponent implements OnInit {
-  public items: MenuItem[] = [];
+  public items: MenuItem[] | undefined = [];
 
   ngOnInit() {
     this.items = [
@@ -18,14 +18,17 @@ export class MenuComponent implements OnInit {
           {
             label: 'Textos y fechas',
             icon: 'pi pi-align-left',
+            routerLink: ['/'],
           },
           {
             label: 'Números',
             icon: 'pi pi-dollar',
+            routerLink: ['numbers'],
           },
           {
             label: 'No comunes',
             icon: 'pi pi-globe',
+            routerLink: ['uncommon'],
           },
         ],
       },
