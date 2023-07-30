@@ -4,7 +4,6 @@ import { Observable, interval } from 'rxjs';
 @Component({
   selector: 'app-un-common-page',
   templateUrl: './un-common-page.component.html',
-  styleUrls: ['./un-common-page.component.css'],
 })
 export class UnCommonPageComponent {
   public name: string = 'Facundo';
@@ -47,7 +46,7 @@ export class UnCommonPageComponent {
   }
 
   // Async pipe
-  public myObservableTimer: Observable<number> = interval(2000); 
+  public myObservableTimer: Observable<number> = interval(2000);
 
   public promiseValue: Promise<string> = new Promise((resolve, reject)=>{
     setTimeout(() =>{
