@@ -1,9 +1,8 @@
 <p-panel [showHeader]="false" class="p-1">
-  <h2>Pipes no tan comunes</h2>
-  <p>Pipes incluídos en angular - Usualmente incluídos en el Common Module</p>
+  <h2>Uncommon Pipes</h2>
+  <p>Pipes inclueded within Angular - Usually included on Common Module</p>
 </p-panel>
 <!-- <hr> -->
-
 <div class="grid">
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
@@ -18,7 +17,7 @@
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
         <p>
-          Actualmente {{clients.length| i18nPlural:clientsMap}} 
+          Actualmente {{clients.length| i18nPlural:clientsMap}}
         </p>
         <p-button label="Cliente atendido" (click)="deleteClient()"></p-button>
        </p-fieldset>
@@ -28,7 +27,7 @@
     <p-fieldset legend="Slice Pipe" [toggleable]="true">
         <b>Original</b>
         <pre> {{clients}} </pre>
-        
+
         <b>slice:0:2</b>
         <pre> {{clients | slice:0:2}} </pre>
 
